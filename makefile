@@ -2,7 +2,7 @@
 
 CC = gcc
 CFLAGS = -Wall -Wextra -std=c11
-TARGET = shellol
+TARGET = a.out
 SRC = shellol.c
 OBJ = $(SRC:.c=.o)
 
