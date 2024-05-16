@@ -13,7 +13,7 @@ int main(void)
   char prog[15];
 
   // Program runs until you type "q"
-  while(strcmp(prog,"q") != 0)
+  while(strcmp(prog,"q"))
   {
     // Get working directory and user-id
     char cwd[30];
@@ -28,17 +28,15 @@ int main(void)
 
 
     // Exit
-    if(strcmp(prog,"q") != 0) {}
+    if(strcmp(prog,"q") == 0) {}
 
     // Print Working Directory
-    else if(strcmp(prog,"pwd") != 0) {
+    else if(strcmp(prog,"pwd") == 0)
       printf("%s\n", cwd);
-    }
 
     // Print User ID
-    else if(strcmp(prog,"puid") != 0) {
+    else if(strcmp(prog,"puid") == 0)
       printf("%i\n", uid);
-    }
 
     // Program call
     else {
